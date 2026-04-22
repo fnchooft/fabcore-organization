@@ -86,11 +86,9 @@ become easier this way.
 
 ## GitBook
 
-- An example in the GitBook-docs itself would not hurt anyone... ;)
-
-- Dark-mode ~~ - would really be nice ( if it worked in GitBook). ~~
-  - ~~ See [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271) ~~
-    - This was fixed! :) 
+After issue [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271) was
+fixed - now we can switch between dark- and normal-mode and the rendering looks
+good.
 
 ## Admonitions
 
