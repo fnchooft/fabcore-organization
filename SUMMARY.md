@@ -14,6 +14,7 @@
     * [XMLDocBook](pocs/xml_docbook_insights/README.md)
     * [PostgresLTree](pocs/ai_studio_pg_ltree/README.md)
     * [PostgresTraffic](pocs/grok_docker_intermittence/README.md)
+    * [OTP 29 Tests](pocs/otp29/README.md)
 
 -----
 * [GitBook notes](gitbook-notes.md)
