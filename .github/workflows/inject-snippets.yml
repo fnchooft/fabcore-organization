@@ -19,7 +19,7 @@ jobs:
       - name: Generate .md from .md.template
         env:
           GITHUB_WORKSPACE: ${{ github.workspace }}
-          DOCS_DIR: getting-started
+          DOCS_DIR: blog
         run: python3 .github/scripts/inject_snippets.py
 
       - name: Push generated .md files to gitbook branch
