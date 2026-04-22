@@ -22,6 +22,10 @@ SSH security defaults (daemon shell/exec/SFTP disabled, post-quantum `mlkem768x2
 - **`compr_assign`** (variable binding in comprehensions) similarly needs its own feature flag .
 - `io_ansi` output looks best on terminals that support VT sequences; in a plain pipe it will print raw escape codes .
 
+## Test module
+
+{% embed url="https://github.com/fnchooft/fabcore-organization/blob/main/pocs/otp29/otp29_new_features.erl" %}
+
 ---
 
 ## kerl installation
