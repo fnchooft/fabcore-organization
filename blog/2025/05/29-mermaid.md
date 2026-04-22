@@ -1,10 +1,4 @@
-# Mermaid (2025-05-29)
-
-## getting-started/mermaid/README.md
-
-
-
-# Mermaid digrams
+# Mermaid diagram in Gitbook
 
 During a recent AI-course AI, the topic or re-factoring came up.
 Specifically to convert images or drawing to mermaid-syntax.
@@ -93,30 +87,6 @@ become easier this way.
 After issue [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271) was
 fixed - now we can switch between dark- and normal-mode and the rendering looks
 good.
-
-## Admonitions
-
-You need to use hints... not very pretty...
-
-
-{% hint style="info" %}
-**Info hints** are great for showing general information, or providing tips and tricks.
-{% endhint %}
-
-{% hint style="success" %}
-**Success hints** are good for showing positive actions or achievements.
-{% endhint %}
-
-{% hint style="warning" %}
-**Warning hints** are good for showing important information or non-critical warnings.
-{% endhint %}
-
-{% hint style="danger" %}
-**Danger hints** are good for highlighting destructive actions or raising attention to critical information.
-{% endhint %}
-
-
-
 
 ## Links
 

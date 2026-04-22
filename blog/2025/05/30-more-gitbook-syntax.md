@@ -1,9 +1,4 @@
-# Config (2025-05-30)
-
-Included file: by-date/2025/05/30-config_assets/book.json
-
-## getting-started/gitbook-ds/README.md
-
+# Getting to know gitbook-syntax
 
 
 
@@ -92,5 +87,3 @@ It should be easy to annotate:
 - [Creating content - GitBook](https://gitbook.com/docs/creating-content/formatting)
 
 - Added [richqoutes](https://github.com/erixtekila/gitbook-plugin-richquotes)
-
-

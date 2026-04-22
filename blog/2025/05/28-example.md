@@ -1,4 +1,4 @@
-# 2025-05-28 - Generator Scripting Language - teaching Gemini
+# Generator Scripting Language - teaching Gemini the ropes
 
 ---
 tags:

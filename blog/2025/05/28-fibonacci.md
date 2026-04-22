@@ -1,12 +1,10 @@
-# Gitbook 5: (2025-05-28)
-
-## getting-started/poc-space/examples.md
+# Fibonacci
 
 ---
 description: On this page we want to experiment on how to document examples in general.
 ---
 
-# Examples
+## Erlang example
 
 For instance, we have many examples in many languages, and it would be great if we could document it such a way that our engineers only have to make some minor adjustments to publish it on GitBook.
 
@@ -34,5 +32,3 @@ fib_iter(Iter-1, Next, Result+Next).
 ```
 
 This example was taken for [https://gist.github.com/chrisdoc/8169e14cb1ae3b6a64b2f35753a0979f](https://gist.github.com/chrisdoc/8169e14cb1ae3b6a64b2f35753a0979f)
-
-
