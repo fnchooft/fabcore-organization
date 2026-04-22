@@ -24,7 +24,7 @@ SSH security defaults (daemon shell/exec/SFTP disabled, post-quantum `mlkem768x2
 
 ## Test module
 
-{% embed url="https://github.com/fnchooft/fabcore-organization/blob/main/pocs/otp29/otp29_new_features.erl" %}
+[View source on Github](https://github.com/fnchooft/fabcore-organization/blob/main/pocs/otp29/otp29_new_features.erl).
 
 ---
 
