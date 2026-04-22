@@ -88,8 +88,9 @@ become easier this way.
 
 - An example in the GitBook-docs itself would not hurt anyone... ;)
 
-- Dark-mode - would really be nice ( if it worked in GitBook). 
-  - See [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271)
+- Dark-mode ~~ - would really be nice ( if it worked in GitBook). ~~
+  - ~~ See [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271) ~~
+    - This was fixed! :) 
 
 ## Admonitions
 
