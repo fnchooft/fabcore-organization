@@ -7,7 +7,9 @@ Replaces markers like:
   <!-- include: path/to/file.sh lines=10- -->
   <!-- include: path/to/file.sh lines=-20 -->
   <!-- /include -->
-with actual file content fenced in a code block.
+
+Paths are resolved relative to the markdown file's own directory first.
+If not found there, falls back to repo root.
 """
 
 import os
@@ -33,18 +35,30 @@ def parse_lines(spec, total):
     end   = int(hi) if hi else total
     return (start, end)
 
+def resolve_path(rel_path, md_dir, repo_root):
+    """Resolve rel_path: prefer sibling to the .md file, fall back to repo root."""
+    local = os.path.join(md_dir, rel_path)
+    if os.path.exists(local):
+        return local
+    root_path = os.path.join(repo_root, rel_path)
+    if os.path.exists(root_path):
+        return root_path
+    return None  # not found anywhere
+
 def inject(md_path, repo_root):
+    md_dir = os.path.dirname(os.path.abspath(md_path))
+
     with open(md_path, 'r') as f:
         content = f.read()
 
     def replace(m):
-        rel_path  = m.group('path')
-        lang      = m.group('lang') or rel_path.rsplit('.', 1)[-1]
+        rel_path   = m.group('path')
+        lang       = m.group('lang') or rel_path.rsplit('.', 1)[-1]
         lines_spec = m.group('lines')
-        abs_path  = os.path.join(repo_root, rel_path)
 
-        if not os.path.exists(abs_path):
-            print(f"  WARNING: {abs_path} not found", file=sys.stderr)
+        abs_path = resolve_path(rel_path, md_dir, repo_root)
+        if abs_path is None:
+            print(f"  WARNING: '{rel_path}' not found (tried {md_dir}/ and repo root)", file=sys.stderr)
             return m.group(0)
 
         with open(abs_path, 'r') as f:
@@ -52,21 +66,9 @@ def inject(md_path, repo_root):
 
         if lines_spec:
             start, end = parse_lines(lines_spec, len(all_lines))
-            selected = all_lines[start:end]
-            code = ''.join(selected).rstrip()
-            marker = f"<!-- include: {rel_path} lines={lines_spec} -->"
+            code = ''.join(all_lines[start:end]).rstrip()
         else:
             code = ''.join(all_lines).rstrip()
-            marker = f"<!-- include: {rel_path} -->"
-
-        if m.group('lang'):
-            marker = marker.replace(' -->', f' lang={m.group("lang")} -->')
-            # reorder: path lang lines
-            marker = re.sub(
-                r'(<!-- include: \S+)(.*?)(-->)',
-                lambda x: x.group(0),
-                marker
-            )
 
         # Rebuild marker cleanly
         parts = [f"<!-- include: {rel_path}"]
