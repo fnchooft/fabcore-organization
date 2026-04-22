@@ -1,18 +1,14 @@
-# Example (2025-05-28)
+# 2025-05-28 - Generator Scripting Language - teaching Gemini
 
-Included file: by-date/2025/05/28-example_assets/Makefile
-
-Included file: by-date/2025/05/28-example_assets/Person.c
-
-Included file: by-date/2025/05/28-example_assets/Person.h
-
-Included file: by-date/2025/05/28-example_assets/Product.c
-
-Included file: by-date/2025/05/28-example_assets/Product.h
-
-## getting-started/gsl-example/README.md
-
-# Generator Scripting Language - teaching Gemini
+---
+tags:
+ - name: gsl
+ - name: mdd
+ - name: generator
+ 
+ description: >-
+  GSL is amazing - xmls 2 anything basically
+---
 
 First of all a shout-out to the [GSL](https://github.com/zeromq/gsl)-tool.
 It is fantastic, simple, robust and after you get the hang of it - extremely addictive.
@@ -38,7 +34,7 @@ Gemini produced:
 
 ### entities.xml
 
-<!-- include: entities.xml lang=xml -->
+<!-- include: 28-example_assets/entities.xml lang=xml -->
 <!-- /include -->
 
 After this I requested it to write the gsl-template to generate, on the basis of the entity-format C-structs.
@@ -46,19 +42,19 @@ After this I requested it to write the gsl-template to generate, on the basis of
 ### entity_generator.gsl
 The resulting template after some back and forth looks like this:
 
-<!-- include: entity_generator.gsl lang=c -->
+<!-- include: 28-example_assets/entity_generator.gsl lang=c -->
 <!-- /include -->
 
 I then asked it to generate a main.c file and a Makefile in order to compile the entire example:
 
 ### main.c
 
-<!-- include: main.c -->
+<!-- include: 28-example_assets/main.c -->
 <!-- /include -->
 
 ### Makefile
 
-<!-- include: Makefile lang=makefile -->
+<!-- include: 28-example_assets/Makefile lang=makefile -->
 <!-- /include -->
 
 
@@ -75,12 +71,12 @@ So, here come the generated artifiacts.
 
 ### Person.h
 
-<!-- include: Person.h -->
+<!-- include: 28-example_assets/Person.h -->
 <!-- /include -->
 
 ### Person.c
 
-<!-- include: Person.c -->
+<!-- include: 28-example_assets/Person.c -->
 <!-- /include -->
 
 
@@ -89,11 +85,4 @@ So, here come the generated artifiacts.
 1. Gemini is better at this then the other solutions I tried. It outperformes DeepSeek ( which I think is really good!)
 2. Gemini might get stuck on a certain issue - for instance - in the templates, the code which needs to be generated should not have a dot as first character.
 3. C-code might be better, but leave it to experts ( humanzzzz ) to provider better examples which we can incorporate.
-
-
-Included file: by-date/2025/05/28-example_assets/entities.xml
-
-Included file: by-date/2025/05/28-example_assets/entity_generator.gsl
-
-Included file: by-date/2025/05/28-example_assets/main.c
 

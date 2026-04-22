@@ -1,14 +1,14 @@
-# Gitbook 4: (2025-05-28)
-
-## gitbook-notes.md
+# 2025-05-28 - Gitbook Notes
 
 ---
+tags:
+ - name: gitbook
+ - name: tips
+ 
 description: >-
   While implementing this - we always find little nuggets of information which
   helped us along the way...
 ---
-
-# GitBook notes
 
 ## Images online
 
@@ -42,7 +42,6 @@ cd $FOLDER && m4 -I. README.md.template > README.md
 ```
 
 That's it!
-
 
 ## Links
 
