@@ -1,4 +1,13 @@
-# Getting to know gitbook-syntax
+---
+description: "Gitbook examples"
+tags:
+  - gitbook
+  - tips
+---
+
+# More gitbook syntax
+
+Below some typical levels and tables.
 
 # Level 1: Main Heading
 
