@@ -27,7 +27,7 @@ So we want to be able to:
 I have not found a proper way - since all tell you to copy and paste the source in the MD-file, and since I am
 lazy, I prefer using another technique.
 
-### Back to M4
+### Back to goold old M4
 
 Pre-processing files is old-school, but it is super easy - after you know how to do it.
 

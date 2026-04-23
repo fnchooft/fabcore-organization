@@ -5,7 +5,7 @@ tags:
   - tips
 ---
 
-# More gitbook syntax
+# Markdown examples for Gitbook
 
 Below some typical levels and tables.
 

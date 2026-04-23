@@ -12,11 +12,11 @@ Ai seems to be pretty good in simple games - such as tetris.
 
 ## Tetris
 
-{% codesnippet "./tetris.html", language="html" %}{% endcodesnippet %}
-
+{% embed url="https://github.com/fnchooft/fabcore-organization/blob/main/blog/2026/04/22-games_assets/tetris.html" %}
 
 ## Bomber
 
-{% codesnippet "./bomber.html", language="html" %}{% endcodesnippet %}
+{% embed url="https://github.com/fnchooft/fabcore-organization/blob/main/blog/2026/04/22-games_assets/bomber.html" %}
+
 
 
