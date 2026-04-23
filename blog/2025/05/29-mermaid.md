@@ -1,3 +1,10 @@
+---
+description: "Generated images from text"
+tags:
+  - mermaid
+  - tips
+---
+
 # Mermaid diagram in Gitbook
 
 During a recent AI-course AI, the topic or re-factoring came up.
@@ -87,8 +94,4 @@ become easier this way.
 After issue [Issue 3271](https://github.com/GitbookIO/gitbook/issues/3271) was
 fixed - now we can switch between dark- and normal-mode and the rendering looks
 good.
-
-## Links
-
-- [Mermaid Gitbook Examples](https://raw.githubusercontent.com/mermaidjs/mermaid-gitbook)
 

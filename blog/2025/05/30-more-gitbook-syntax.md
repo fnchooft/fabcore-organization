@@ -1,7 +1,5 @@
 # Getting to know gitbook-syntax
 
-
-
 # Level 1: Main Heading
 
 ## Level 2: Tables
