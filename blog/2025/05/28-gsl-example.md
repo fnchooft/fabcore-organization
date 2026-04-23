@@ -1,13 +1,11 @@
-# Generator Scripting Language - teaching Gemini the ropes
+# GSL - Generator Scripting Language - teaching Gemini the ropes
 
 ---
 tags:
- - name: gsl
- - name: mdd
- - name: generator
- 
- description: >-
-  GSL is amazing - xmls 2 anything basically
+ - gsl
+ - mdd
+ - generator
+description: "GSL is amazing - xmls 2 anything basically"
 ---
 
 First of all a shout-out to the [GSL](https://github.com/zeromq/gsl)-tool.

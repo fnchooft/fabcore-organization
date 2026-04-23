@@ -1,5 +1,12 @@
 # Admonitions
 
+---
+description: "Admonitions are formatted, often-colored, and icon-tagged text blocks in documentation used to highlight specific types of information—notes, tips, warnings, or dangers—to improve readability and highlight critical content. They are commonly used in Markdown, Docusaurus, and AsciiDoc, appearing as blockquotes that separate important or cautious warnings from main content."
+tags:
+ - admonition
+ - formatting
+---
+
 You need to use hints... not very pretty... - but it works.
 
 The following code:
