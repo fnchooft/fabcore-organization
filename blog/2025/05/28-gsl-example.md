@@ -1,12 +1,13 @@
+---
+description: "GSL is amazing - xmls 2 anything basically"
+tags:
+  - gsl
+  - mdd
+  - generator
+---
+
 # GSL - Generator Scripting Language - teaching Gemini the ropes
 
----
-tags:
- - gsl
- - mdd
- - generator
-description: "GSL is amazing - xmls 2 anything basically"
----
 
 First of all a shout-out to the [GSL](https://github.com/zeromq/gsl)-tool.
 It is fantastic, simple, robust and after you get the hang of it - extremely addictive.
